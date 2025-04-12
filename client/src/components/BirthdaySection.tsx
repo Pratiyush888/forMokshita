@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { birthdayWishes } from '../lib/data';
+import { useCountdown } from '../hooks/useCountdown';
+import { BIRTHDAY_YEAR_BORN } from '../lib/constants';
 
 const BirthdaySection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const countdown = useCountdown();
+  const age = new Date().getFullYear() - BIRTHDAY_YEAR_BORN;
+  const nextAge = age + 1;
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -91,12 +96,31 @@ const BirthdaySection = () => {
           >
             <div className="bg-rose/20 backdrop-blur-sm p-8 rounded-lg border border-rose/30 text-center">
               <div className="mb-6">
-                <span className="block text-xl font-light mb-1">Birthday Countdown</span>
-                <h3 className="text-4xl font-playfair font-bold">September 8th</h3>
+                <span className="block text-xl font-light mb-1">Born on September 8, 2003</span>
+                <h3 className="text-4xl font-playfair font-bold">Turning {nextAge} Soon!</h3>
+              </div>
+              
+              <div className="flex justify-center items-center space-x-4 mb-8">
+                <div className="bg-navy-dark/50 backdrop-blur-sm p-3 rounded-lg w-20 text-center">
+                  <span className="block text-2xl font-bold">{countdown.days}</span>
+                  <span className="text-xs opacity-75">Days</span>
+                </div>
+                <div className="bg-navy-dark/50 backdrop-blur-sm p-3 rounded-lg w-20 text-center">
+                  <span className="block text-2xl font-bold">{countdown.hours}</span>
+                  <span className="text-xs opacity-75">Hours</span>
+                </div>
+                <div className="bg-navy-dark/50 backdrop-blur-sm p-3 rounded-lg w-20 text-center">
+                  <span className="block text-2xl font-bold">{countdown.minutes}</span>
+                  <span className="text-xs opacity-75">Minutes</span>
+                </div>
+                <div className="bg-navy-dark/50 backdrop-blur-sm p-3 rounded-lg w-20 text-center">
+                  <span className="block text-2xl font-bold">{countdown.seconds}</span>
+                  <span className="text-xs opacity-75">Seconds</span>
+                </div>
               </div>
               
               <div id="birthday-message" className="mb-8">
-                <p className="text-lg italic font-playfair">"To the most amazing woman in my world, happy birthday! You deserve all the happiness this universe can offer."</p>
+                <p className="text-lg italic font-playfair">"To the most amazing {age}-year-old woman in my world, you deserve all the happiness this universe can offer."</p>
               </div>
               
               <motion.button 
@@ -106,7 +130,7 @@ const BirthdaySection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <i className="fas fa-gift mr-2"></i> Click For Your Surprise
+                <i className="fas fa-gift mr-2"></i> Click For Your Birthday Surprise
               </motion.button>
             </div>
           </motion.div>

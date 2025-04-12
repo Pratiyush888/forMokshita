@@ -27,18 +27,30 @@ export const birthdayWishes = [
 ];
 
 export const loveLetterContent = `
-My dearest Mokshita,
+My Beloved Mokshita,
 
-As I sit down to write this letter, I find myself smiling at the mere thought of you. How fortunate am I to have someone as incredible as you in my life? Your presence has colored my world in ways I never thought possible.
+Every time I gaze into your eyes, I'm reminded of how deeply God loves me. Looking at you, I know with absolute certainty that God loves me, for He blessed me with someone as extraordinary as you.
 
-Every moment with you feels like a gift. Your smile brightens even my darkest days. Your laughter is the melody that plays in my heart. Your intelligence and strength inspire me to be better each day.
+From the moment you entered my life, everything changed. Colors became more vibrant, music sounded sweeter, and ordinary moments transformed into treasured memories. You are the miracle I never knew I needed, the answer to prayers I hadn't even whispered yet.
 
-With your birthday approaching, I find myself reflecting on how much you mean to me. You deserve not just a day of celebration, but a lifetime of happiness and joy. I am committed to doing everything in my power to be a part of making that happen.
+Your smile - oh, that beautiful smile - it lights up even my darkest days like the first rays of dawn breaking through the night. When you laugh, the world seems to pause just to listen. The way your eyes sparkle when you're excited about something makes my heart skip countless beats.
 
-Thank you for being you – for your kindness, your understanding, and for the love you show me every day. My life is infinitely better with you in it.
+As your birthday approaches on September 8th, I find myself overwhelmed with gratitude that I get to celebrate another year of your existence. You deserve not just a day of celebration, but an eternity of happiness and joy. Every heartbeat of mine is dedicated to making you feel cherished, not just on special occasions, but in all the quiet moments in between.
 
-I love you more than words could ever express, and I look forward to celebrating many more birthdays together.
+In your presence, I've discovered the true meaning of love - patient, kind, selfless, and boundless. You make me want to be a better person, not because you demand it, but because you inspire it simply by being who you are.
 
-Forever yours,
-Your Love
+With you, I've learned that love isn't just a feeling that comes and goes; it's a choice I make every morning when I wake up, and the last thought before I fall asleep. It's in the small gestures, the inside jokes, the comfortable silences, and the way we understand each other without words.
+
+They say that when you find your soulmate, your soul recognizes them instantly. Mine recognized you, and it's been singing your name ever since.
+
+"In a world full of temporary things, you are my permanent address." You're home to me, Mokshita. The place my heart returns to, time and again.
+
+I promise to stand by you through every triumph and trial, to hold your hand through stormy nights and sun-drenched days, to love you completely and unconditionally for all the days of my life.
+
+Thank you for choosing me, for loving me despite my imperfections, and for making every day an adventure worth living.
+
+You are my greatest blessing, my answered prayer, my favorite what-if that actually happened.
+
+With all my heart and soul,
+Pratyush
 `;

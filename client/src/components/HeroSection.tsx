@@ -1,17 +1,28 @@
 import { motion } from 'framer-motion';
 import { useCountdown } from '../hooks/useCountdown';
+import backgroundImage from '@assets/WhatsApp Image 2025-04-13 at 1.27.43 AM (3).jpeg';
 
 const HeroSection = () => {
   const { days, hours, minutes, seconds } = useCountdown();
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-pattern relative overflow-hidden pt-16">
-      <div className="absolute -top-10 -left-10 w-40 h-40 bg-rose rounded-full opacity-20 blur-3xl"></div>
-      <div className="absolute bottom-10 right-10 w-60 h-60 bg-rose rounded-full opacity-20 blur-3xl"></div>
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: `url(${backgroundImage})`,
+          filter: 'brightness(0.3) blur(2px)'
+        }}
+      ></div>
+      
+      {/* Decorative Elements */}
+      <div className="absolute -top-10 -left-10 w-40 h-40 bg-rose rounded-full opacity-20 blur-3xl z-10"></div>
+      <div className="absolute bottom-10 right-10 w-60 h-60 bg-rose rounded-full opacity-20 blur-3xl z-10"></div>
       
       <div className="container mx-auto px-4 py-20 text-center z-10 fade-in visible">
         <motion.h1 
-          className="text-4xl md:text-6xl font-playfair font-bold text-navy mb-6 leading-tight"
+          className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 leading-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -27,7 +38,7 @@ const HeroSection = () => {
         ></motion.div>
         
         <motion.p 
-          className="text-lg md:text-xl text-navy-light max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -50,7 +61,7 @@ const HeroSection = () => {
         </motion.div>
         
         <div className="mb-10">
-          <div id="birthday-countdown" className="text-navy font-medium text-xl">
+          <div id="birthday-countdown" className="text-white font-medium text-xl">
             Counting down to your special day...
           </div>
           <div className="flex justify-center space-x-4 mt-4">
@@ -95,7 +106,7 @@ const HeroSection = () => {
         
         <motion.a 
           href="#story" 
-          className="inline-block bg-navy text-white px-8 py-3 rounded-full hover:bg-navy-light transition-colors text-lg font-medium shadow-md hover:shadow-lg"
+          className="inline-block bg-rose text-white px-8 py-3 rounded-full hover:bg-rose-dark transition-colors text-lg font-medium shadow-md hover:shadow-lg"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 1.2 }}

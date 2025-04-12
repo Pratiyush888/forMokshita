@@ -6,6 +6,7 @@ import StorySection from '../components/StorySection';
 import GallerySection from '../components/GallerySection';
 import BirthdaySection from '../components/BirthdaySection';
 import LoveLetterSection from '../components/LoveLetterSection';
+import ToDoListSection from '../components/ToDoListSection';
 import Footer from '../components/Footer';
 import MusicPlayer from '../components/MusicPlayer';
 import BirthdaySurpriseModal from '../components/BirthdaySurpriseModal';
@@ -52,6 +53,7 @@ const Home = () => {
       <GallerySection />
       <BirthdaySection />
       <LoveLetterSection />
+      <ToDoListSection />
       <Footer />
       <BirthdaySurpriseModal />
       <ChatBot />

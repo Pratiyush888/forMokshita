@@ -26,6 +26,99 @@ export const birthdayWishes = [
   "Adventures that create beautiful memories for us to cherish"
 ];
 
+export const todoListItems = [
+  {
+    id: 1,
+    text: "Watch the sunset at our favorite spot",
+    completed: true,
+    category: "romantic"
+  },
+  {
+    id: 2,
+    text: "Create a scrapbook of our favorite memories",
+    completed: false,
+    category: "creative"
+  },
+  {
+    id: 3,
+    text: "Travel to Paris together",
+    completed: false,
+    category: "travel"
+  },
+  {
+    id: 4,
+    text: "Learn to cook her favorite meal",
+    completed: true,
+    category: "skills"
+  },
+  {
+    id: 5,
+    text: "Have a picnic under the stars",
+    completed: false,
+    category: "romantic"
+  },
+  {
+    id: 6,
+    text: "Take dance lessons together",
+    completed: false,
+    category: "adventure"
+  },
+  {
+    id: 7,
+    text: "Surprise her with breakfast in bed",
+    completed: true,
+    category: "romantic"
+  },
+  {
+    id: 8,
+    text: "Visit the Taj Mahal",
+    completed: false,
+    category: "travel"
+  },
+  {
+    id: 9,
+    text: "Write a love letter each month for a year",
+    completed: false,
+    category: "creative"
+  },
+  {
+    id: 10,
+    text: "Create a playlist of songs that remind us of each other",
+    completed: true,
+    category: "creative"
+  },
+  {
+    id: 11,
+    text: "Learn photography to capture our moments better",
+    completed: false,
+    category: "skills"
+  },
+  {
+    id: 12,
+    text: "Go on a hot air balloon ride",
+    completed: false,
+    category: "adventure"
+  },
+  {
+    id: 13,
+    text: "Plant a tree together and watch it grow with our relationship",
+    completed: false,
+    category: "romantic"
+  },
+  {
+    id: 14,
+    text: "Celebrate our anniversary in a new city each year",
+    completed: false,
+    category: "travel"
+  },
+  {
+    id: 15,
+    text: "Volunteer together for a cause we both care about",
+    completed: false,
+    category: "meaningful"
+  }
+];
+
 export const loveLetterContent = `
 My Beloved Mokshita,
 

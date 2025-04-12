@@ -9,6 +9,7 @@ import LoveLetterSection from '../components/LoveLetterSection';
 import Footer from '../components/Footer';
 import MusicPlayer from '../components/MusicPlayer';
 import BirthdaySurpriseModal from '../components/BirthdaySurpriseModal';
+import ChatBot from '../components/ChatBot';
 
 const Home = () => {
   useEffect(() => {
@@ -53,6 +54,7 @@ const Home = () => {
       <LoveLetterSection />
       <Footer />
       <BirthdaySurpriseModal />
+      <ChatBot />
     </motion.div>
   );
 };
